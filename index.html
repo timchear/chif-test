@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="./chifPlayer.js"></script>
+  </head>
+  <body>
+    <div style="max-width:500px">
+      <chear src="./adena.chif" />
+    </div>
+    <div style="max-width:500px">
+      <chear src="./jesse.chif" />
+    </div>
+    <script>
+      (async function() {
+        const chifs = await chifPlayer.streamFiles({debug: true})
+      })()
+    </script>
+  </body>
+</html>
